@@ -45,15 +45,15 @@
 					</ol>
 					<div class="carousel-inner" role="listbox">
 						<div class="carousel-item active">
-							<img class="d-block img-fluid" src="http://placehold.it/900x350"
+							<img class="d-block img-fluid" src="http://ung6039.cafe24.com/img/main.jpg"
 								alt="First slide">
 						</div>
 						<div class="carousel-item">
-							<img class="d-block img-fluid" src="http://placehold.it/900x350"
+							<img class="d-block img-fluid" src="http://ung6039.cafe24.com/img/main1.jpg"
 								alt="Second slide">
 						</div>
 						<div class="carousel-item">
-							<img class="d-block img-fluid" src="http://placehold.it/900x350"
+							<img class="d-block img-fluid" src="http://ung6039.cafe24.com/img/main2.jpg"
 								alt="Third slide">
 						</div>
 					</div>

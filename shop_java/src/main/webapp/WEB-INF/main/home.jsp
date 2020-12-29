@@ -26,11 +26,11 @@
 		<div class="row">
 
 			<div class="col-lg-3">
-				<h1 class="my-4">Shop Name</h1>
+				<h1 class="my-4">많이 팔리는 쇼핑몰</h1>
 				<div class="list-group">
-					<a href="#" class="list-group-item">Category 1</a> <a href="#"
-						class="list-group-item">Category 2</a> <a href="#"
-						class="list-group-item">Category 3</a>
+					<a href="#" class="list-group-item">편의점 </a> <a href="#"
+						class="list-group-item">마트</a> <a href="#"
+						class="list-group-item"></a>
 				</div>
 			</div>
 			<div class="col-lg-9">
@@ -44,15 +44,15 @@
 					</ol>
 					<div class="carousel-inner" role="listbox">
 						<div class="carousel-item active">
-							<img class="d-block img-fluid" src="http://placehold.it/900x350"
+							<img class="d-block img-fluid" src="http://ung6039.cafe24.com/img/main.jpg"
 								alt="First slide">
 						</div>
 						<div class="carousel-item">
-							<img class="d-block img-fluid" src="http://placehold.it/900x350"
+							<img class="d-block img-fluid" src="http://ung6039.cafe24.com/img/main1.jpg"
 								alt="Second slide">
 						</div>
 						<div class="carousel-item">
-							<img class="d-block img-fluid" src="http://placehold.it/900x350"
+							<img class="d-block img-fluid" src="http://ung6039.cafe24.com/img/main2.jpg"
 								alt="Third slide">
 						</div>
 					</div>

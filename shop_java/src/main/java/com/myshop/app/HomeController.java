@@ -40,5 +40,10 @@ public class HomeController {
 		
 		return "WEB-INF/main/home";
 	}
+	@RequestMapping(value="/about.do", method= RequestMethod.GET)
+	public String about(Locale locale, Model model) {
+		logger.info("about",locale);
+		return "WEB-INF/about/detail";
+	}
 	
 }
