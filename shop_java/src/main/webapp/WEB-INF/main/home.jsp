@@ -24,15 +24,7 @@
 	<div class="container">
 
 		<div class="row">
-
-			<div class="col-lg-3">
-				<h1 class="my-4">많이 팔리는 쇼핑몰</h1>
-				<div class="list-group">
-					<a href="#" class="list-group-item">편의점 </a> <a href="#"
-						class="list-group-item">마트</a> <a href="#"
-						class="list-group-item"></a>
-				</div>
-			</div>
+			<jsp:include page="/resources/category.jsp"></jsp:include>		
 			<div class="col-lg-9">
 				<div id="carouselExampleIndicators" class="carousel slide my-4"
 					data-ride="carousel">

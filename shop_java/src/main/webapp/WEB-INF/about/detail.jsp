@@ -16,9 +16,17 @@
 <header>
 <jsp:include page="/resources/header.jsp" />	
 </header>
-	<div>
-		<h1>상세페이지</h1>
+	<div class="container">
+		<div class="row">
+			<jsp:include page="/resources/category.jsp"></jsp:include>
+			<div class="col-lg-9">
+				<div>
+					<h1>상세페이지</h1>
+				</div>
+			</div>
+		</div>
 	</div>
+	
 <footer>
 </footer>
 <jsp:include page="/resources/footer.jsp"></jsp:include>
