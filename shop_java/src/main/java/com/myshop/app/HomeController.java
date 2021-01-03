@@ -4,6 +4,8 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -44,6 +46,11 @@ public class HomeController {
 	public String about(Locale locale, Model model) {
 		logger.info("about",locale);
 		return "WEB-INF/about/detail";
+	}
+	@RequestMapping(value="/login.do", method=RequestMethod.POST)
+	public String login(HttpSession session){
+		session.setAttribute("login", "Login");
+		return "index";
 	}
 	
 }
