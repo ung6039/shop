@@ -25,6 +25,7 @@
 					<img src="http://ung6039.cdn3.cafe24.com/a.png">
 					<img src="http://ung6039.cdn3.cafe24.com/b.png">
 				</div>
+				<div>회원 가입</div>
 			</div>
 		</div>
 	</div>
