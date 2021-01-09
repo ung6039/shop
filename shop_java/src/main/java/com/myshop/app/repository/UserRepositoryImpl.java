@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.myshop.app.vo.LoginVO;
+import com.myshop.app.vo.LoginVO.UserBuilder;
 
 @Repository
 public class UserRepositoryImpl implements UserRepository{
@@ -22,8 +23,8 @@ public class UserRepositoryImpl implements UserRepository{
 
 	@Override
 	public Optional<LoginVO> findById(String email) {
-		// TODO Auto-generated method stub
-		return null;
+		Optional<LoginVO> vo = usermapper.member(email);
+		return vo;
 	}
 
 	@Override
