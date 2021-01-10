@@ -17,6 +17,6 @@
 	
 	<bean id="UserMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"
 		p:sqlSessionFactory-ref="ssf"
-		p:mapperInterface-ref="com.myshop.app.repository.UserMapper"
+		p:mapperInterface="com.myshop.app.repository.UserMapper"
 	/>
 </beans>

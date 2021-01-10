@@ -31,7 +31,7 @@
 			<!-- /.col-lg-3 -->
 
 			<div class="col-lg-9">
-
+				
 				<div id="carouselExampleIndicators" class="carousel slide my-4"
 					data-ride="carousel">
 					<ol class="carousel-indicators">

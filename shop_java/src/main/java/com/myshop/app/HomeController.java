@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -47,9 +48,18 @@ public class HomeController {
 		logger.info("about",locale);
 		return "WEB-INF/about/detail";
 	}
-	@RequestMapping(value="/login.do", method=RequestMethod.POST)
+	@RequestMapping(value="/login.do")
 	public String login(HttpSession session){
-		session.setAttribute("login", "Login");
+		
+		return "WEB-INF/login/login";
+	}
+	
+	@RequestMapping(value="login1.do", method=RequestMethod.GET)
+	public String login1(HttpServletRequest request) {
+		String id = (String) request.getAttribute("id");
+		String pwd= (String) request.getAttribute("pwd");
+		logger.info(id);
+		logger.info(pwd);
 		return "index";
 	}
 	
