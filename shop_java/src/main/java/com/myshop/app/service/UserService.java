@@ -1,5 +1,7 @@
 package com.myshop.app.service;
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -22,4 +24,10 @@ public class UserService {
 		}
 		return sucess;
 	};
+	
+	public boolean findId(String email){
+		Optional<LoginVO> vo = userRepository.findById(email);
+//		boolean bq = ;
+		return false;
+	}
 }
