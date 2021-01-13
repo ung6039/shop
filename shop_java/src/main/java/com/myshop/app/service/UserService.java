@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.myshop.app.repository.UserRepository;
 import com.myshop.app.vo.LoginVO;
 
-
+@Service
 public class UserService {
 	private final UserRepository userRepository;
 
