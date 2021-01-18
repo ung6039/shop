@@ -28,7 +28,6 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	private UserService userService;
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -65,7 +64,6 @@ public class HomeController {
 	public String login1(HttpServletRequest request) {
 		String id = (String) request.getParameter("id");
 		String pwd= (String) request.getAttribute("pwd");
-		boolean a = userService.findId(id);
 		return "index";
 	}
 	
