@@ -49,9 +49,9 @@ public class HomeController {
 		
 		return "WEB-INF/main/home";
 	}
-	@RequestMapping(value="/signup.do",method=RequestMethod.GET)
+	@RequestMapping(value="/joinForm.do",method=RequestMethod.GET)
 	public String findId() {
-		return "WEB-INF/login/signup";
+		return "WEB-INF/login/joinForm";
 	}
 	@RequestMapping(value="/about.do", method= RequestMethod.GET)
 	public String about(Locale locale, Model model) {
