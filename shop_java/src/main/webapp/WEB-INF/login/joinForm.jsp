@@ -11,7 +11,8 @@
 <link href="resources/css/shop-homepage.css" rel="stylesheet">
 <script type="text/javascript">
 	function goLoginForm(){
-		location.herf="login.jsp"	
+		location.href="login.do";
+		alert("과연?");
 	}
 </script>
 </head>
@@ -81,7 +82,7 @@
 						<input type="submit" value="가입">
 					</td>
 					<td>
-						<input type="button" value="취소" onclick="goLoginFor()">
+						<input type="button" value="취소" onclick="goLoginForm()">
 					</td>
 				</tr>
 			</table>
