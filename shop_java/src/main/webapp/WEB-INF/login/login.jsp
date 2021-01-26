@@ -15,19 +15,17 @@
 	<header>
 		<jsp:include page="/resources/header.jsp"></jsp:include>
 	</header>
-	<div class="container" style="height: 600px;">
-		<div class="row">
-			<div style="margin: 10px;">
-				<form action="login1.do">
-					<input type="text" name="id" title="아이디 입력"/>
-					<br/> 
-					<input type="text" name="pwd" title="패스워드 입력" />
-					<br/> 
-					<input type="submit" value="입력">
-				</form>
-			</div>
-		</div>
+
+	<div id="login_wrapper" style="margin: 10px;">
+		<img src="http://ung6039.cafe24.com/img/login.jfif">
+		<form action="login1.do">
+			<input type="text" name="id" title="아이디 입력" /> <br /> <input
+				type="text" name="pwd" title="패스워드 입력" /> <br /> <input
+				type="submit" value="입력">
+		</form>
 	</div>
+
+
 	<footer>
 		<jsp:include page="/resources/footer.jsp"/>
 	</footer>
