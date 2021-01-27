@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="resources/vendor/bootstrap/css/bootstrap.min.css"
+<link href="${pageContext.request.contextPath}/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 
 <!-- Custom styles this template -->
-<link href="resources/css/shop-homepage.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/shop-homepage.css" rel="stylesheet">
 <script type="text/javascript">
 	function goLoginForm(){
 		location.href="login.do";
