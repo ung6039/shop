@@ -24,11 +24,7 @@
 				type="submit" value="입력">
 		</form>
 	</div>
-
-
-	<footer>
 		<jsp:include page="/resources/footer.jsp"/>
-	</footer>
 	<script src="resources/vendor/jquery/jquery.min.js"></script>
 <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
