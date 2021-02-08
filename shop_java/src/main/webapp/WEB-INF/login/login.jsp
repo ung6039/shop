@@ -17,7 +17,7 @@
 	</header>
 
 	<div id="login_wrapper" style="margin: 10px;">
-		<img src="http://ung6039.cafe24.com/img/login.jfif">
+		<img src="http://ung6039.cafe24.com/img/login.png">
 		<form action="login1.do">
 			<input type="text" name="id" title="아이디 입력" /> <br /> <input
 				type="text" name="pwd" title="패스워드 입력" /> <br /> <input
