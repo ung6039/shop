@@ -30,3 +30,10 @@ div#login_wrapper{
 	justify-content:center;
 	align-items: center;
 }
+footer{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	margin-top:-1.9em;height:1.9em
+	}

@@ -191,12 +191,12 @@
 
 		</div>
 		<!-- /.row -->
-
+<jsp:include page="resources/footer.jsp"></jsp:include>
 	</div>
 	<!-- /.container -->
 
 	<!-- Footer -->
-	<jsp:include page="resources/footer.jsp"></jsp:include>
+	
 	<script src="resources/vendor/jquery/jquery.min.js"></script>
 	<script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
