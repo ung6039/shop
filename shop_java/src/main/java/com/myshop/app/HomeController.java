@@ -64,10 +64,13 @@ public class HomeController {
 		return "WEB-INF/login/login";
 	}
 	
-	@RequestMapping(value="login1.do", method=RequestMethod.GET)
-	public String login1(HttpServletRequest request) {
+	@RequestMapping(value="login1.do", method=RequestMethod.POST)
+	public String login1(HttpServletRequest request, HttpSession session ) {
 		String id = (String) request.getParameter("id");
 		String pwd= (String) request.getAttribute("pwd");
+		logger.info("로그인 정보"+id+" "+ pwd);
+		session.setAttribute("id", id);
+		
 		return "index";
 	}
 	
