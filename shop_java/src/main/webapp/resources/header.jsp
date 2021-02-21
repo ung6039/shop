@@ -9,10 +9,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-        	 <% if(session == null ){ %>
+        	 <% 
+        	   if(session.getAttribute("id") == null ){ %>
           	<a class="nav-link" href="login.do">Login</a>
           	<% }else { %>
-          	<i>${id}</i>
+          	<i>${session.getAttribute("id")}</i>
           	<%} %>
           </li>
           <li class="nav-item active">
@@ -28,6 +29,10 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+          	로그아웃 
+          	<% session.removeAttribute("id"); %>
           </li>
         </ul>
       </div>
