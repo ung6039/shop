@@ -43,15 +43,15 @@
 					<div class="carousel-inner" role="listbox">
 						<div class="carousel-item active">
 							<img class="d-block img-fluid"
-								src="http://ung6039.cafe24.com/img/1.jpg" alt="First slide">
+								src="http://ung6039.cafe24.com/img/main1.jfif" alt="First slide">
 						</div>
 						<div class="carousel-item">
 							<img class="d-block img-fluid"
-								src="http://ung6039.cafe24.com/img/2.jpg" alt="Second slide">
+								src="http://ung6039.cafe24.com/img/main2.jfif" alt="Second slide">
 						</div>
 						<div class="carousel-item">
 							<img class="d-block img-fluid"
-								src="http://ung6039.cafe24.com/img/3.jpg" alt="Third slide">
+								src="http://ung6039.cafe24.com/img/main3.jfif" alt="Third slide">
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleIndicators"
@@ -191,10 +191,10 @@
 
 		</div>
 		<!-- /.row -->
-<jsp:include page="resources/footer.jsp"></jsp:include>
+
 	</div>
 	<!-- /.container -->
-
+	<jsp:include page="resources/footer.jsp"></jsp:include>
 	<!-- Footer -->
 	
 	<script src="vendor/jquery/jquery.min.js"></script>

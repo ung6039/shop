@@ -13,7 +13,7 @@
         	   if(session.getAttribute("id") == null ){ %>
           	<a class="nav-link" href="login.do">Login</a>
           	<% }else { %>
-          	<i>${session.getAttribute("id")}</i>
+          	<span>${session.getAttribute("id")}</span>
           	<%} %>
           </li>
           <li class="nav-item active">
@@ -32,7 +32,9 @@
           </li>
           <li class="nav-item">
           	로그아웃 
+          	<span>
           	<% session.removeAttribute("id"); %>
+          	</span>
           </li>
         </ul>
       </div>
