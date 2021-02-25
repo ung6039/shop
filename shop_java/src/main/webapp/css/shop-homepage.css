@@ -4,36 +4,38 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
  */
 body {
-  padding-top: 56px;
-  color: red;
+	padding-top: 56px;
+	color: red;
 }
 
-div#login_wrapper{
+div#login_wrapper {
 	position: absolute;
-	top:20%;
-	left:35%;
-	border: solid 1px gray;
-	width:300px;
-	margin-left:-80px;
-	margin-top:-50px;
-	
-	display:flex;
-		flex-direction:column;
-		justify-content:center;
-		align-items: center;
-}
-.form{
-	width:300px;
-}
-.form > div{
-	display:flex;
-	justify-content:center;
+	top: 20%;
+	left: 35%;
+	width: 300px;
+	margin-left: -80px;
+	margin-top: -50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
-footer{
-	position:fixed;
-	bottom:0;
-	left:0;
-	right:0;
-	margin-top:-1.9em;height:1.9em
-	}
+
+.form {
+	width: 300px;
+}
+
+.form>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-top: -1.9em;
+	height: 1.9em
+}

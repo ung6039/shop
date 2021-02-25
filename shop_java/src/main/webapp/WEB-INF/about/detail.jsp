@@ -22,8 +22,7 @@
 			<div class="col-lg-9">
 				<div>
 					<h1>상세페이지</h1>
-					<img src="http://ung6039.cdn3.cafe24.com/a.png">
-					<img src="http://ung6039.cdn3.cafe24.com/b.png">
+					<img src="http://ung6039.cdn3.cafe24.com/${img }+.jpg">
 				</div>
 				<div>회원 가입</div>
 			</div>
