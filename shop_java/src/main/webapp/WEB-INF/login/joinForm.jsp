@@ -25,7 +25,7 @@
 		<div style="color: gray;">회원가입</div>
 		<div class="row">
 			<div>
-				<form method="post" action="../login/JoinPro.jsp" name="userInfo"
+				<form method="post" action="../login/JoinPro.do" name="userInfo"
 					onsubmit="return checkValue()">
 					<table>
 						<tr>
@@ -35,17 +35,12 @@
 						</tr>
 						<tr>
 							<td>비밀번호</td>
-							<td><input type="text" name="pwd" maxlength="50"></td>
+							<td><input type="password" name="pwd" maxlength="50"></td>
 						</tr>
 						<tr>
 							<td>비밀번호 확인</td>
-							<td><input type="pwd" name="pwdcheck" maxlength="50">
+							<td><input type="password" name="pwdcheck" maxlength="50">
 							</td>
-						</tr>
-						<tr>
-							<td>성별</td>
-							<td><input type="radio" name="gender" value="남" checked>남
-								<input type="radio" name="gender" value="여" checked>여</td>
 						</tr>
 						<tr>
 							<td>생일</td>

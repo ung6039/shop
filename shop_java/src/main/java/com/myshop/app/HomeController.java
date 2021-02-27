@@ -27,6 +27,9 @@ import com.myshop.app.vo.LoginVO;
 @Controller
 public class HomeController {
 	
+	@Autowired
+	UserService userService;
+	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
@@ -50,9 +53,12 @@ public class HomeController {
 		
 		return "WEB-INF/main/home";
 	}
-	@RequestMapping(value="/joinForm.do",method=RequestMethod.GET)
-	public String findId() {
-		return "WEB-INF/login/joinForm";
+	@RequestMapping(value="/joinForm.do",method=RequestMethod.POST)
+	public String join(HttpRequest request, Model model) {
+		
+		
+		
+		return "WEB-INF/login/login";
 	}
 	@RequestMapping(value="/about.do", method= RequestMethod.GET)
 	public String about(Locale locale, Model model, HttpServletRequest request) {

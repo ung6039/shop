@@ -9,6 +9,8 @@ public class LoginVO {
 	@NotNull
 	private final Long seq;
 	@NotNull
+	private String id;
+	@NotNull
 	private Email email;
 	@NotNull
 	private String passwd;
@@ -19,6 +21,19 @@ public class LoginVO {
 	@NotNull
 	private final LocalDateTime createAt;
 	
+	public LoginVO(Long seq, String id, Email email, String passwd, int loginCount, LocalDateTime lastLoginAt,
+			LocalDateTime createAt) {
+		super();
+		this.seq = seq;
+		this.id = id;
+		this.email = email;
+		this.passwd = passwd;
+		this.loginCount = loginCount;
+		this.lastLoginAt = lastLoginAt;
+		this.createAt = createAt;
+	}
+
+
 	private LoginVO(UserBuilder userBuilder) {
 		this.seq= userBuilder.seq;
 		this.email=userBuilder.email;
