@@ -53,12 +53,20 @@ public class HomeController {
 		
 		return "WEB-INF/main/home";
 	}
-	@RequestMapping(value="/joinForm.do",method=RequestMethod.POST)
-	public String join(HttpRequest request, Model model) {
+	@RequestMapping(value="/joinForm.do",method=RequestMethod.GET)
+	public String join(HttpServletRequest request, Model model) {
+		return "WEB-INF/login/joinForm";
+	}
+	@RequestMapping(value="/joinPro.do",method=RequestMethod.GET)
+	public String join_p(HttpServletRequest request, Model model) {
 		
-		
-		
-		return "WEB-INF/login/login";
+		boolean status = false;
+		if(status) {
+			return "";
+		}
+		else {
+			return "WEB-INF/login/login";
+		}
 	}
 	@RequestMapping(value="/about.do", method= RequestMethod.GET)
 	public String about(Locale locale, Model model, HttpServletRequest request) {

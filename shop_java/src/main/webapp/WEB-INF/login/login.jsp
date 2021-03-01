@@ -22,7 +22,9 @@
 			<input type="text" name="id" title="아이디 입력" /> <br /> <input
 				type="password" name="pwd" title="패스워드 입력" /> <br /> <input
 				type="submit" value="입력">
+			<a class="button" href="joinForm.do">회원가입</a>
 		</form>
+	
 	</div>
 		<jsp:include page="/resources/footer.jsp"/>
 	<script src="resources/vendor/jquery/jquery.min.js"></script>
