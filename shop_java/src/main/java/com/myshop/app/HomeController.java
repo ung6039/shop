@@ -59,11 +59,13 @@ public class HomeController {
 	}
 	@RequestMapping(value="/joinPro.do",method=RequestMethod.GET)
 	public String join_p(HttpServletRequest request, Model model) {
-		
+		String s = "as";
 		boolean status = false;
 		if(status) {
+			
 			return "";
-		}
+		}  
+		
 		else {
 			return "WEB-INF/login/login";
 		}
