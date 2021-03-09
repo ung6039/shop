@@ -14,6 +14,10 @@
 		location.href="login.do";
 		alert("과연?");
 	}
+	function checkValue(){
+		alert("중복체크 구현");
+		location.href="login.do";
+	}
 </script>
 </head>
 <body>
