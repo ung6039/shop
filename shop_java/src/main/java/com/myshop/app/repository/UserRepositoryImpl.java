@@ -33,5 +33,8 @@ public class UserRepositoryImpl implements UserRepository{
 		return null;
 	}
 	
+	public String ddd() {
+		return "";
+	}
 
 }
