@@ -29,7 +29,7 @@
 		<div style="color: gray;">회원가입</div>
 		<div class="row">
 			<div>
-				<form method="post" action="../login/JoinPro.do" name="userInfo"
+				<form method="post" action="JoinPro.do" name="userInfo"
 					onsubmit="return checkValue()">
 					<table>
 						<tr>
@@ -48,7 +48,7 @@
 						</tr>
 						<tr>
 							<td>생일</td>
-							<td><input type="text" name="birth" maxlength="4"
+							<td><input type="text" name="birthday" maxlength="4"
 								placeholder="년" size="6"> <select name="birthmm">
 									<option value="">월</option>
 									<option value="1">1</option>

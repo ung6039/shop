@@ -1,8 +1,12 @@
 package com.myshop.app;
 
 import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.Optional;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,9 +21,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.myshop.app.repository.MemberDAO;
 import com.myshop.app.repository.UserRepository;
 import com.myshop.app.service.UserService;
 import com.myshop.app.vo.LoginVO;
+import com.myshop.app.vo.MemberVO;
 
 /**
  * Handles requests for the application home page.
@@ -27,8 +33,10 @@ import com.myshop.app.vo.LoginVO;
 @Controller
 public class HomeController {
 	
+//	@Autowired
+//	UserService userService;
 	@Autowired
-	UserService userService;
+	MemberDAO memberdao;
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
@@ -57,13 +65,31 @@ public class HomeController {
 	public String join(HttpServletRequest request, Model model) {
 		return "WEB-INF/login/joinForm";
 	}
-	@RequestMapping(value="/joinPro.do",method=RequestMethod.GET)
+	@RequestMapping(value="/JoinPro.do",method=RequestMethod.POST)
 	public String join_p(HttpServletRequest request, Model model) {
-		String s = "as";
-		boolean status = false;
+		boolean status = true;
 		if(status) {
+			String id = request.getParameter("id");
+			String pwd = request.getParameter("pwd");
+			String name = "웅";
+			String birthday = request.getParameter("birthday");
+			String birthdd = request.getParameter("birthdd");
+			String birthmm = request.getParameter("birthmm");
+			birthday = birthday+"-"+birthmm+"-"+birthdd;
+			String addr = "서울시";
+			String img = "img/img.png";
+			Map map = new HashMap();
+			map.put("memberid", id);
+			map.put("pwd",pwd);
+			map.put("birthday", birthday);
+			map.put("name", name);
+			map.put("info","123123");
+			map.put("addr", addr);
+			map.put("img",img);
 			
-			return "";
+			memberdao.save(map);
+			
+			return "redirect:/main.do";
 		}  
 		
 		else {
