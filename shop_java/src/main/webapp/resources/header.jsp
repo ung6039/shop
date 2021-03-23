@@ -31,10 +31,7 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item">
-          	로그아웃 
-          	<span>
-          	<% session.removeAttribute("id"); %>
-          	</span>
+          	<a href="logout.do">로그아웃</a> 
           </li>
         </ul>
       </div>
