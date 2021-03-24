@@ -12,9 +12,10 @@
         	 <% 
         	   if(session.getAttribute("id") == null ){ %>
           	<a class="nav-link" href="login.do">Login</a>
-          	<% }else { %>
-          	<span>${session.getAttribute("id")}</span>
-          	<%} %>
+          	<span>
+          	<% }else{ session.getAttribute("id"); %>
+          	 </span>
+            <% } %>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="home.do">Home
