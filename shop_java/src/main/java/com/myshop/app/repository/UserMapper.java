@@ -22,4 +22,8 @@ public interface UserMapper {
 	@Insert("Insert into member(memberid,pwd,name,info,regdate,birthday,addr,img)"+
 			" values(#{memberid},#{pwd},#{name},#{info},sysdate,#{birthday},#{addr},#{img} )")
 	public void member_join(Map map);
+	
+	@Select("select * from member "+
+			"where memberid = #{id} AND pwd = #{pwd}")
+	public Optional<MemberVO> findId_member(Map map);
 }

@@ -12,6 +12,7 @@ import java.util.Optional;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.apache.commons.collections.map.HashedMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -104,7 +105,6 @@ public class HomeController {
 	}
 	@RequestMapping(value="/login.do")
 	public String login(HttpSession session){
-		
 		return "WEB-INF/login/login";
 	}
 	
@@ -112,11 +112,21 @@ public class HomeController {
 	public String login1(HttpServletRequest request, HttpSession session ) {
 		String id = (String) request.getParameter("id");
 		String pwd= (String) request.getParameter("pwd");
-		logger.info("로그인 정보"+id+" "+ pwd);
-		session.setAttribute("id", id);
+		Map map = new HashMap();
+		map.put("id", id);
+		map.put("pwd", pwd);
+		Optional<MemberVO> vo = memberdao.findId(map);
 		System.out.println(session.getAttribute("id"));
+		if(vo.isPresent()) {
+			logger.info("로그인 정보"+id+" "+ pwd);
+			session.setAttribute("id", id);
+			return "index";
+		}else {
+			return "WEB-INF/login/login?loginstate=0";
+		}
 		
-		return "index";
+		
+	
 	}
 	
 }
