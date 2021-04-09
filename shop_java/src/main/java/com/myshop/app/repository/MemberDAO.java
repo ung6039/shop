@@ -31,7 +31,7 @@ public class MemberDAO {
 		System.out.println(map.get("id")+" "+map.get("pwd"));
 		Optional<MemberVO> vo = userMapper.findId_member(map);
 		boolean state = true;
-		String s = "";
+		String s = "jhjj";
 		if(state) {
 			System.out.println("1");
 			return Optional.ofNullable(vo.get());
