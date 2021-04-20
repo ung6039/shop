@@ -1,27 +1,24 @@
 package com.myshop.app.vo;
 
 import java.time.LocalDateTime;
-
-import javax.validation.constraints.NotNull;
-
 import lombok.Getter;
 
 @Getter
 public class LoginVO {
 	
-	@NotNull
+	
 	private final Long seq;
-	@NotNull
+	
 	private String id;
-	@NotNull
+	
 	private Email email;
-	@NotNull
+	
 	private String passwd;
-	@NotNull
+	
 	private int loginCount;
-	@NotNull
+	
 	private LocalDateTime lastLoginAt;
-	@NotNull
+	
 	private final LocalDateTime createAt;
 	
 	public LoginVO(Long seq, String id, Email email, String passwd, int loginCount, LocalDateTime lastLoginAt,
@@ -40,7 +37,7 @@ public class LoginVO {
 	private LoginVO(UserBuilder userBuilder) {
 		this.seq= userBuilder.seq;
 		this.email=userBuilder.email;
-		this.passwd=userBuilder.passwd;
+		// this.passwd=userBuilder.passwd
 		this.loginCount=userBuilder.loginCount;
 		this.lastLoginAt=userBuilder.lastLoginAt;
 		this.createAt=userBuilder.createAt;
