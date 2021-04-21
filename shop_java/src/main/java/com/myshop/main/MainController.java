@@ -1,12 +1,12 @@
 package com.myshop.main;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpSession;
-
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 
 @Controller
 public class MainController {
@@ -19,6 +19,11 @@ public class MainController {
 	public String logout(HttpSession session) {
 		session.removeAttribute("id");
 		return "redirect:/main.do";
+	}
+	@RequestMapping(value="/test.do",method=RequestMethod.GET)
+	public String TESTE(HttpRequest request){
+
+		return "test";
 	}
 
 }
