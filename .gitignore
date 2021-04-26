@@ -15,7 +15,7 @@ shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/myshop/app/vo/Logi
 shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/myshop/app/vo/LoginVO$UserBuilder.class
 shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/myshop/app/vo/MemberVO.class
 shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/myshop/main/MainController.class
-shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/config/application-context.xml
+shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/config/application-context.xminsertedEmaill
 shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/config/application-datasoure.xml
 shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/antlr-runtime-3.5.2.jar
 shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/aspectjrt-1.6.10.jar
@@ -110,3 +110,15 @@ shop_java/target/m2e-wtp/web-resources/META-INF/maven/com.myshop/app/pom.xml
 shop_java/target/maven-archiver/pom.properties
 shop_java/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 shop_java/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+shop_java/target/classes/com/myshop/app/HomeController.class
+shop_java/target/classes/com/myshop/app/repository/MemberDAO.class
+shop_java/target/classes/com/myshop/app/repository/UserMapper.class
+shop_java/target/classes/com/myshop/app/repository/UserRepository.class
+shop_java/target/classes/com/myshop/app/repository/UserRepositoryImpl.class
+shop_java/target/classes/com/myshop/app/service/TEST.class
+shop_java/target/classes/com/myshop/app/service/UserService.class
+shop_java/target/classes/com/myshop/app/vo/Email.class
+shop_java/target/classes/com/myshop/app/vo/LoginVO.class
+shop_java/target/classes/com/myshop/app/vo/LoginVO$UserBuilder.class
+shop_java/target/classes/com/myshop/app/vo/MemberVO.class
+shop_java/target/classes/com/myshop/main/MainController.class
