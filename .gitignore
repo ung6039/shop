@@ -122,3 +122,15 @@ shop_java/target/classes/com/myshop/app/vo/LoginVO.class
 shop_java/target/classes/com/myshop/app/vo/LoginVO$UserBuilder.class
 shop_java/target/classes/com/myshop/app/vo/MemberVO.class
 shop_java/target/classes/com/myshop/main/MainController.class
+shop_java/target/app-1.0.0-BUILD-SNAPSHOT/WEB-INF/config/application-context.xml
+shop_java/target/classes/com/myshop/app/HomeController.class
+shop_java/target/classes/com/myshop/app/repository/MemberDAO.class
+shop_java/target/classes/com/myshop/app/repository/UserMapper.class
+shop_java/target/classes/com/myshop/app/repository/UserRepository.class
+shop_java/target/classes/com/myshop/app/repository/UserRepositoryImpl.class
+shop_java/target/classes/com/myshop/app/service/UserService.class
+shop_java/target/classes/com/myshop/app/vo/Email.class
+shop_java/target/classes/com/myshop/app/vo/LoginVO.class
+shop_java/target/classes/com/myshop/app/vo/LoginVO$UserBuilder.class
+shop_java/target/classes/com/myshop/app/vo/MemberVO.class
+shop_java/target/classes/com/myshop/main/MainController.class
