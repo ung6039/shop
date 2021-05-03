@@ -46,8 +46,6 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/app", method = RequestMethod.GET)
 	public String start() {
-		System.out.println("sf");
-		System.out.println("start");
 		return "index";
 	}
 
@@ -110,6 +108,10 @@ public class HomeController {
 	@RequestMapping(value = "/login.do")
 	public String login(HttpSession session) {
 		return "WEB-INF/login/login";
+	}
+	@RequestMapping(value = "/abd.do")
+	public String abd(HttpSession session) {
+		return "redircet:/main.do";
 	}
 
 	@RequestMapping(value = "login1.do", method = RequestMethod.POST)

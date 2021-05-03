@@ -20,10 +20,15 @@ public class MainController {
 		session.removeAttribute("id");
 		return "redirect:/main.do";
 	}
-	@RequestMapping(value="/test.do",method=RequestMethod.GET)
-	public String TESTE(HttpRequest request){
+	@RequestMapping(value="/detail.do",method=RequestMethod.GET)
+	public String detail_product(HttpServletRequest request){
 
-		return "test";
+		return "WEB-INF/shop_product/product";
+	}
+	@RequestMapping(value="/detail.do",method=RequestMethod.GET)
+	public String board(HttpServletRequest request){
+		
+		return "WEB-INF/board/board";
 	}
 
 }

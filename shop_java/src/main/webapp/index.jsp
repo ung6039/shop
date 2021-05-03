@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <head>
+<title>첫번째 마트</title>
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -69,7 +70,7 @@
 
 					<div class="col-lg-4 col-md-6 mb-4">
 						<div class="card h-100">
-							<a href="#"><img class="card-img-top"
+							<a href="detail.do"><img class="card-img-top"
 								src="http://ung6039.cafe24.com/shop/1.jpg" alt=""></a>
 							<div class="card-body">
 								<h4 class="card-title">
