@@ -74,7 +74,7 @@
 								src="http://ung6039.cafe24.com/shop/1.jpg" alt=""></a>
 							<div class="card-body">
 								<h4 class="card-title">
-									<a href="about.do?${1}">1</a>
+									<a href="about.do?${1}">asdfas</a>
 								</h4>
 								<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 									adipisicing elit. Amet numquam aspernatur!</p>
