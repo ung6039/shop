@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+	<modelVersion>3.1.1</modelVersion>
 	<groupId>com.myshop</groupId>
 	<artifactId>app</artifactId>
 	<name>shop_java</name>
@@ -25,7 +25,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>${org.springframework-version}</version>
+			<version>3.1.1.RELEASE</version>
 			<exclusions>
 				<!-- Exclude Commons Logging in favor of SLF4j -->
 				<exclusion>
@@ -39,8 +39,15 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		<!-- validation-api -->
+		<!--  <dependency>
+    		<groupId>javax.validation</groupId>
+   			<artifactId>validation-api</artifactId>
+    		<version>1.1.0.Final</version>
+		</dependency>
+		-->
 		<!-- User -->
-			<dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
@@ -275,7 +282,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.5.1</version>
                 <configuration>
-                    <source>1.8</source>
+                    
+				</artifactId><source>1.8</source>
                     <target>1.8</target>
                     <compilerArgument>-Xlint:all</compilerArgument>
                     <showWarnings>true</showWarnings>
