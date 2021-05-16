@@ -28,7 +28,7 @@ public class MainController {
 	}
 	@RequestMapping(value="/detail.do",method=RequestMethod.GET)
 	public String board(HttpServletRequest request){
-		
+		System.out.println("dfsf");
 		return "WEB-INF/board/board";
 	}
 
