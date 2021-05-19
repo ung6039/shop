@@ -22,7 +22,7 @@ public class MainController {
 	}
 	@RequestMapping(value="/detail.do",method=RequestMethod.GET)
 	public String detail_product(HttpServletRequest request){
-		System.out.println("??");
+		System.out.println("??12122");
 
 		return "WEB-INF/shop_product/product";
 	}
