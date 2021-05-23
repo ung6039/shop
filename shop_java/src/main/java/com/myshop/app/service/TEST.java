@@ -6,4 +6,7 @@ public class TEST {
         System.out.println("asdfsadfsa");
 
     }
+    
+    public void test() {
+    }
 }
