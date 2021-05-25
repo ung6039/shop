@@ -13,7 +13,7 @@ public class MainController {
 	@RequestMapping(value="/main.do", method = RequestMethod.GET)
 	public String main(HttpServletRequest request) {
 		request.setAttribute("main", "START");
-		System.out.println("ddsfsd");
+		System.out.println("ddsfssssssd");
 		return "WEB-INF/main/main";
 	}
 	@RequestMapping(value="/logout.do",method =RequestMethod.GET)
